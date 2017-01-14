@@ -1,11 +1,11 @@
 const googleMap = googleMap || {};
 const google = google;
 
-googleMap.addInWindowForIsland = function(island, marker) {
+googleMap.addInfoWindowForIsland = function(island, marker, weather) {
   google.maps.event.addListener(marker, 'click', () => {
     if (typeof this.infoWindow !== 'undefined') this.infoWindow.close();
     this.infoWindow = new google.maps.InfoWindow({
-      content: `<img src='../images/${island.image}'><p>${island.name}</p><p>${island.location}</p><p>${island.area}</p><p>${island.description}</p>`
+      content: `<img src="../images/${island.image}"><p>${island.name}</p><p>${island.location}</p><p>${island.area}</p><p>${island.description}</p><p>${weather.weather[0].description}</p>`
     });
 
     this.infoWindow.open(this.map, marker);
@@ -15,17 +15,23 @@ googleMap.addInWindowForIsland = function(island, marker) {
 };
 
 googleMap.createMarkerForIsland = function(island) {
-  const latlng = new google.maps.LatLng(island.lat, island.lng);
-  const marker = new google.maps.Marker({
-    position: latlng,
-    map: this.map,
-    animation: google.maps.Animation.DROP
+  $.get(`http://api.openweathermap.org/data/2.5/weather?lat=${island.lat}&lon=${island.lng}&APPID=fac0994644ce8854830ef0888b428c6d`).done((weather ) =>{
+
+    console.log(weather);
+    const latlng = new google.maps.LatLng(island.lat, island.lng);
+    const marker = new google.maps.Marker({
+      position: latlng,
+      map: this.map,
+      animation: google.maps.Animation.DROP
+    });
+    this.addInfoWindowForIsland(island, marker, weather);
+
   });
-  this.addInfoWindowForIsland(island, marker);
+
 };
 
 googleMap.loopThroughIslands = function(data) {
-  console.log(data)
+  console.log(data);
 
   $.each(data, (i, island) => {
     setTimeout(function(){

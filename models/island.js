@@ -5,7 +5,7 @@ const islandSchema = new mongoose.Schema({
   location: { type: String },
   image: { type: String },
   area: { type: String },
-  description: {type: String },
+  description: { type: String },
   lat: { type: String },
   lng: { type: String }
 });
