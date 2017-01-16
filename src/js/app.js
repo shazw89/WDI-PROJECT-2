@@ -55,4 +55,7 @@ googleMap.mapSetup = function() {
   this.getIslands();
 };
 
+
+
+
 $(googleMap.mapSetup.bind(googleMap));
