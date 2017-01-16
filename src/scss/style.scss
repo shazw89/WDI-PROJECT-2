@@ -1,8 +1,13 @@
 body{
-  background:red;
+  font-family: 'Tangerine', cursive;
 }
 
-#map-canvas{
+#map {
   height: 90vh;
   width: 100%;
+  font-family: 'Tangerine', cursive;
+}
+
+#wallpaper {
+  background: cover;
 }

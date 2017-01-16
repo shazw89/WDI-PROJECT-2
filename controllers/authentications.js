@@ -14,7 +14,7 @@ function authenticationRegister(req, res){
     const token = jwt.sign(user._id, config.secret, { expiresIn: 60*60*24 });
 
     return res.status(201).json({
-      message: `Welcome${user.username}!`,
+      message: `Welcome ${user.username}!`,
       user,
       token
     });
