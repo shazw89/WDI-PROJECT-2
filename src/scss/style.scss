@@ -1,13 +1,33 @@
+html{
+  height:100%;
+}
 body{
   font-family: 'Tangerine', cursive;
+  background-image: url('/images/moreoldpaper.jpg');
+  background-size: cover;
+}
+main{
+  text-align: center;
+}
+h2{
+  color: #60061E;
+}
+
+#scroll {
+  background-image: url('/images/moreoldpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kraken{
+  opacity: 0.5;
+  border: 2px solid black;
+  border-radius: 100px;
 }
 
 #map {
   height: 90vh;
   width: 100%;
   font-family: 'Tangerine', cursive;
-}
-
-#wallpaper {
-  background: cover;
+  opacity: 0.8;
 }
