@@ -135,7 +135,9 @@ googleMap.addInfoWindowForIsland = function(island, marker, weather) {
         this.infoWindow = new google.maps.InfoWindow({
           content: `
           <div class="infoWindow">
-          <img class="islandImage" src="../images/${island.image}"><p>${island.name}</p><p>${island.location}</p><p>${island.area}</p><p>${island.description}</p><p>${weather.weather[0].description}</p>
+          <img class="islandImage" src="../images/${island.image}"><p>${island.name}</p><p>${island.location}</p><p>${island.area}</p>
+          <p>${island.description}</p>
+          <p>${weather.weather[0].description}</p>
           `
         });
 
