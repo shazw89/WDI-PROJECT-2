@@ -200,14 +200,14 @@ const islands = [
     lat: '45.381906',
     lng: '12.331167'
   }),
-  new Island({
-    name: 'Isla de las Muñecas',
-    location: 'Xochimilco, south of Mexico City',
-    image: 'dollz.jpg',
-    description: 'If you’re afraid of dolls or the cyclical nature of history, Isla de las Muñecas isn’t the place for you. For reasons that remain unknown, an eccentric man named Don Julian Santana left his wife and child to settle on this island on Teshuilo Lake. According to his accounts, he found a drowned girl and dedicated the rest of his life to communing with her. How, you say? He obsessively collected dolls and covered every square inch of his new home with the toys, leaving them in whatever imperfect state he found them in. The ghost girl eventually answered his call. His drowned body was found in the exact same spot he claimed to have found her corpse.',
-    lat: '19.290168',
-    lng: '-99.096485'
-  }),
+  // new Island({
+  //   name: 'Isla de las Muñecas',
+  //   location: 'Xochimilco, south of Mexico City',
+  //   image: 'dollz.jpg',
+  //   description: 'If you’re afraid of dolls or the cyclical nature of history, Isla de las Muñecas isn’t the place for you. For reasons that remain unknown, an eccentric man named Don Julian Santana left his wife and child to settle on this island on Teshuilo Lake. According to his accounts, he found a drowned girl and dedicated the rest of his life to communing with her. How, you say? He obsessively collected dolls and covered every square inch of his new home with the toys, leaving them in whatever imperfect state he found them in. The ghost girl eventually answered his call. His drowned body was found in the exact same spot he claimed to have found her corpse.',
+  //   lat: '19.290168',
+  //   lng: '-99.096485'
+  // }),
   new Island({
     name: 'Daksa',
     location: 'Elaphiti Islands, Croatia',
@@ -251,6 +251,14 @@ const islands = [
     description: 'The main reason Japan, China and Taiwan will never get along. If you were from Japan, you’d call them the Senkaku Islands. But if you were from China, you’d insist on calling them the Diaoyu Islands and Diaoyutai if you were Taiwanese. No matter what name you’d use, this is heavily disputed territory. Historically, it’s changed hands a few times. The Chinese laid claim to its discovery and ownership from the fourteenth century while Japan took over from 1895 till WW2. The US returned it to Japanese rule in 1972, an extremely controversial decision that continues to affect diplomatic relations between the three Asian nations to this day.',
     lat: '25.746319',
     lng: '123.474200'
+  }),
+  new Island({
+    name: 'Isla de las Muñecas',
+    location: 'Xochimilco, south of Mexico City',
+    image: 'evil-dolls.jpg',
+    description: 'If you’re afraid of dolls or the cyclical nature of history, Isla de las Muñecas isn’t the place for you. For reasons that remain unknown, an eccentric man named Don Julian Santana left his wife and child to settle on this island on Teshuilo Lake. According to his accounts, he found a drowned girl and dedicated the rest of his life to communing with her. How, you say? He obsessively collected dolls and covered every square inch of his new home with the toys, leaving them in whatever imperfect state he found them in. The ghost girl eventually answered his call. His drowned body was found in the exact same spot he claimed to have found her corpse.',
+    lat: '19.290168',
+    lng: '-99.096485'
   })
 ];
 
