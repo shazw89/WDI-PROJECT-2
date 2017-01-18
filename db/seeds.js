@@ -11,7 +11,7 @@ const islands = [
   new Island({
     name: 'Devon Island',
     location: 'Baffin Bay, Canada',
-    image: 'Devon-Island.jpg',
+    image: 'devon-island.jpg',
     area: '55,247 km²',
     description: 'The world\'s largest uninhabited island doesn’t appear quite of this earth. This is why this barren lunarscape serves as the otherworldly stage for scientists training for Mars expeditions. Its most notable feature, the Haughton Impact Crater is considered Earth’s best Mars analog site.',
     lat: '75.241869',
@@ -20,7 +20,7 @@ const islands = [
   new Island({
     name: 'Ball\'s Pyramid',
     location: 'Pacific Ocean',
-    image: 'Balls.jpg',
+    image: 'balls.jpg',
     description: 'Part of Australia’s Lord Howe Island Marine Park, this remote outcropping appears as inhospitable as it is striking. But its sheer cliff faces serve as the last remaining refuge of one of the world’s rarest insect species. The Lord Howe Island Stick Insect was last seen alive in 1920 and was long thought to be extinct. But in 2001, 24 were found living on the island.',
     lat: '-31.753588',
     lng: '159.251218'
@@ -90,7 +90,7 @@ const islands = [
   new Island({
     name: 'Phoenix Islands',
     location: 'Pacific Ocean, a territory of Kiribati',
-    image: 'phoenix.jpg',
+    image: 'phoenix.jpeg',
     description: 'These form is a protected area, thanks to its remoteness and relatively undisturbed marine ecosystems. Once a hub for whalers and guano miners, They’re now better known as home to 120 species of coral and more than 500 species of fish. However, the island of Nikumaroro gained notoriety as a place Amelia Earhart might have crash landed at on her ill-fated 1937 flight.',
     lat: '-4.449639',
     lng: '-171.239217'
@@ -203,7 +203,7 @@ const islands = [
   new Island({
     name: 'Isla de las Muñecas',
     location: 'Xochimilco, south of Mexico City',
-    image: 'evil-dolls.jpg',
+    image: 'dollz.jpg',
     description: 'If you’re afraid of dolls or the cyclical nature of history, Isla de las Muñecas isn’t the place for you. For reasons that remain unknown, an eccentric man named Don Julian Santana left his wife and child to settle on this island on Teshuilo Lake. According to his accounts, he found a drowned girl and dedicated the rest of his life to communing with her. How, you say? He obsessively collected dolls and covered every square inch of his new home with the toys, leaving them in whatever imperfect state he found them in. The ghost girl eventually answered his call. His drowned body was found in the exact same spot he claimed to have found her corpse.',
     lat: '19.290168',
     lng: '-99.096485'

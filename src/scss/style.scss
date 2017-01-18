@@ -9,8 +9,16 @@ body{
 main{
   text-align: center;
 }
-h2{
+
+h3{
   color: #60061E;
+  padding: 0px 50px 0px 50px;
+  font: bold;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
 }
 
 #scroll {
@@ -30,4 +38,17 @@ h2{
   width: 100%;
   font-family: 'Tangerine', cursive;
   opacity: 0.8;
+}
+
+.islandImage {
+border: 10px;
+}
+
+div {
+  border: 3px;
+}
+
+.gm-style .gm-style-iw {
+  height: 200px;
+  width: 400px;
 }
