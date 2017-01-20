@@ -40,7 +40,7 @@ gulp.task('fonts', () => {
 
 gulp.task('serve', ['es6', 'sass'], () => {
   browserSync.init({
-    proxy: 'http://localhost:3000',
+    proxy: 'https://islands-app-project-2.herokuapp.com',
     files: ['public/**/*.*'],
     browser: 'google chrome',
     port: 7000,

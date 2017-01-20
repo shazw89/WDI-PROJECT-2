@@ -2,7 +2,7 @@ const googleMap = googleMap || {};
 const google    = google;
 
 googleMap.init = function() {
-  this.apiUrl = 'http://localhost:3000/api';
+  this.apiUrl = 'https://islands-app-project-2.herokuapp.com';
   this.$main  = $('main');
 
   $('.home').on('click', this.homepage.bind(this));
@@ -221,7 +221,7 @@ googleMap.addMonsters = function(data){
 };
 
 googleMap.getIslands = function() {
-  $.get('http://localhost:3000/api/islands').done(this.loopThroughIslands);
+  $.get('https://islands-app-project-2.herokuapp.com').done(this.loopThroughIslands);
   this.addMonsters();
 };
 
